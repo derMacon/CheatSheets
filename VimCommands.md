@@ -3,7 +3,7 @@
 ### Scrolling in doc: 
 Commands | Explanation
 -------- | -------
-`z` + z | Move current line in the middle of the screen
+z + z | Move current line in the middle of the screen
 z + t | Move current line to the top of the screen 
 z + b | Move current line to the bottom of the screen 
 Ctrl + y | Move Screen up one line 
