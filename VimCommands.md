@@ -1,4 +1,5 @@
 # Vim Commands
+![VimOverview](https://github.com/derMacon/CheatSheets/blob/master/vi-vim-cheat-sheet.gif)
 ### Scrolling in doc: 
 Commands | Explanation
 -------- | -------
