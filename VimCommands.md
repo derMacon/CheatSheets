@@ -17,10 +17,14 @@ Command | Explanation
 -------- | -------
 : + w | save file 
 : + w + q | save and quit 
+u | undo changes
+Ctrl + r | redo undone changes
+: + q + ! | quit without saving
 
 ### Settings
 Command | Explanation
 -------- | -------
+:set mouse=a | Setsup mouse 
 :colorscheme elflord | Change theme to elflord theme
 
 For Markdown syntax: [sourceforge.net](https://sourceforge.net/p/tabulator/wiki/markdown_syntax/#md_ex_tables)
