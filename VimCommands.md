@@ -10,6 +10,7 @@ Ctrl + y | Move Screen up one line
 Ctrl + e | Move Screen down one line 
 Ctrl + b | Move Screen up one page
 Shift + G | Move to bottom of the page
+g + g | Move to beginning of the file
 
 ### Save
 Command | Explanation
