@@ -1,4 +1,4 @@
-# DGB - Console Debugger for C
+# GDB - Console Debugger for C
 
 ### Getting started
 Command | Explanation
