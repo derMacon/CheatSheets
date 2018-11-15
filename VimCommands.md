@@ -1,6 +1,6 @@
 # Vim Commands
 ![VimOverview](https://github.com/derMacon/CheatSheets/blob/master/vi-vim-cheat-sheet.gif)
-### Scrolling in doc: 
+### Navigation
 Commands | Explanation
 -------- | -------
 z + z | Move current line in the middle of the screen
@@ -15,7 +15,20 @@ g + g | Move to beginning of the file
 ### Delete
 Commands | Explanation
 ---------| ----------
-dG | delete all lines
+`dG` | delete all lines
+`dd` | delete current line
+
+### Copy / Paste
+Commands | Explanation
+---------| ----------
+`v` | enter character selection mode 
+`V` | enter line selection mode
+`y` | copy selection
+`yy` | copy current line 
+`d` | cut selection
+`dd` | cut current line 
+`p` | paste after cursor
+`P` | paste before cursor
 
 ### Save
 Command | Explanation
@@ -29,7 +42,9 @@ Ctrl + r | redo undone changes
 ### Settings
 Command | Explanation
 -------- | -------
-:set mouse=a | Setsup mouse 
+In terminal type `vim .vimrc` | safe settings for all instances
+:set mouse=a | Settup mouse 
 :colorscheme elflord | Change theme to elflord theme
+:set number | setsup line numbers
 
 For Markdown syntax: [sourceforge.net](https://sourceforge.net/p/tabulator/wiki/markdown_syntax/#md_ex_tables)
