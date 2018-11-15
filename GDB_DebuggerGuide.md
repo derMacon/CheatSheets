@@ -20,6 +20,8 @@ Command | Explanation
 `dissable <lineNum>` | dissable breakpoint at given line number
 
 ### Navigation
+Command | Explanation
+--------| ---------
 `next` | step over
 `step` | step into
 
