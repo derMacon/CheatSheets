@@ -12,6 +12,11 @@ Ctrl + b | Move Screen up one page
 Shift + G | Move to bottom of the page
 g + g | Move to beginning of the file
 
+### Delete
+Commands | Explanation
+---------| ----------
+dG | delete all lines
+
 ### Save
 Command | Explanation
 -------- | -------
