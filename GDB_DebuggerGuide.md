@@ -1,5 +1,4 @@
 # DGB - Console Debugger for C
-**[further information](http://openbook.rheinwerk-verlag.de/linux_unix_programmierung/Kap17-005.htm)**
 
 ### Getting started
 Command | Explanation
@@ -30,3 +29,5 @@ Command | Explanation
 --------| ---------
 `print <varName>` | prints the value of the given variable
 `whatis <varName>` | gives the type of the given variable
+
+**[further information](http://openbook.rheinwerk-verlag.de/linux_unix_programmierung/Kap17-005.htm)**
