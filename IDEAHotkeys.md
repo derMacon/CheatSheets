@@ -1,6 +1,7 @@
 # IDEA shortcuts: 
 Command | Explanation
 --------| ----------
+`Strg + n` | navigate to class
 alt + Shift + f10 | Select which file to run / debug
 alt + Enter | import packgages
 alt + einfg | add constructor / Getter / Setter 
