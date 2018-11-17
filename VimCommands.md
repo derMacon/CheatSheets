@@ -46,5 +46,6 @@ In terminal type `vim .vimrc` | safe settings for all instances
 :set mouse=a | Settup mouse 
 :colorscheme elflord | Change theme to elflord theme
 :set number | setsup line numbers
+:set tabstop=<num> | set tabstop size to <num> chars
 
 For Markdown syntax: [sourceforge.net](https://sourceforge.net/p/tabulator/wiki/markdown_syntax/#md_ex_tables)
