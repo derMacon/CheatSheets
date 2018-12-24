@@ -1,0 +1,12 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {0.1}Textuelle Darstellung}{2}
+\contentsline {section}{\numberline {0.2}Formatierung}{2}
+\contentsline {subsection}{\numberline {0.2.1}Packages}{3}
+\contentsline {section}{\numberline {0.3}Klassen}{3}
+\contentsline {section}{\numberline {0.4}Metadaten}{3}
+\contentsline {section}{\numberline {0.5}Bilder}{3}
+\contentsline {subsection}{\numberline {0.5.1}Referenzierung}{4}
+\contentsline {section}{\numberline {0.6}Quellcode}{4}
+\contentsline {section}{\numberline {0.7}Sonstiges}{5}
+\contentsline {section}{\numberline {0.8}Beispielhafter Fliesstext}{5}
+\contentsline {section}{\numberline {.1}Im Anhang Eins}{i}

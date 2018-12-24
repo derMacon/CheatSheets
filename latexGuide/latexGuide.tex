@@ -17,7 +17,7 @@
 \lhead{Guides and tutorials}
 \rfoot{Page \thepage}
 
-\title{\includegraphics[width=0.5\linewidth]{pics/LaTeXLogo}\\Zusammenfassung}
+\title{\includegraphics[width=.8\linewidth]{pics/LogoIconLarge}\\Zusammenfassung}
 \author{Silas}
 \date{03/14/15}
 
@@ -26,6 +26,11 @@
 \begin{document}
 \maketitle
 \thispagestyle{empty}
+
+\newpage
+\tableofcontents
+\newpage
+
 Uebersicht ueber diverse Latex-Befehle und wie man diese benutzt.
 
 \textbf{Alle} Befehle \emph{beginnen} mit einem Backslash
@@ -61,45 +66,107 @@ Koennen auch zur Generierung eines Inhaltsverzeichnisses genutzt werden.
 
   \item \verb|\quad <Text>|: Der Text wird per Tabulator eingerueckt
   \item \verb|\\|: Zeilenumbruch, ansonsten eine neue Leerzeile fuer Paragraphen einfuehren.
+  \item \verb|\clearpage| alle Floating Umgebungen drucken ihren Inhalt und es wird eine neue Seite hinter diesen Elementen angelegt.
 \end{itemize}
 
 \subsection{Packages}
 Befehl zum einbinden eines Paketes: 
 usepackage[<Optionale Parameter>]{<Verpflichtende Parameter}|.
 \begin{itemize}
-  \item \verb|\usepackage[utf8]{inputenc}|: Deutsche Umlaute werden verfuegbar gemacht emph{(Inputencoding)}
+  \item \verb|\usepackage[utf8]{inputenc}|: Deutsche Umlaute werden verfuegbar gemacht \emph{(Inputencoding)}
   \item \verb|\usepackage[Tl]{fontenc}|: Kodierung in der PDF-Datei, Umlaute koennen gesucht werden. 
   \item \verb|\usepackage[english, ngerman]{babel}|: Rechtschreibpruefung. Auch mit mehreren Sprach moeglich, letztgenannte immer die Hauptsprache
   \item \verb|\usepackage{lmodern}|: Schoener aussehende Fonts
   \item \verb|\usepackage{graphicx}|: Package zum Einbinden von Bildern
+  \item \verb|\usepackage{blindtext}|: Package zum Generieren von sinnlosen Textbloecken um Formatierung zu visualisieren. Ein Aufruf von \verb|\blindtext| genuegt.
+  \item \verb|\usepackage{listings}|: Darstellungsumgebung fuer Quellcode
 \end{itemize}
 
-\subsection{Klassen}
+\section{Klassen}
 \begin{itemize}
   \item \verb|documentclass[a4paper]{scrartcl}|: Erneuerte Standarddokumentklasse mit unterschiedlichen Schriften.
 \end{itemize}
 
-\subsection{Metadaten}
-Erst muessen die Metadaten deklaraiert werden. Dazu einfach die Befehle title, author und date aufrufen. 
+\section{Metadaten}
+Erst muessen die Metadaten deklariert werden. Dazu einfach die Befehle title, author und date aufrufen. 
 \begin{itemize}
   \item \verb|\maketitle|: Muss in einem Dokument aufgerufen werden und erzeugt ein Deckblatt mit den gegebenen Metadaten.
   \item \verb|\thispagestyle{...}|: Der Parameter empty loescht saemtliche Seitenzahlen. 
 \end{itemize}
 
-\subsection{Bilder}
+\section{Bilder}
 Grundsaetlich werden diverse Packages benoetigt um ein Bild einbinden zu koennen. Um nicht jedes mal den Pfad neu eingeben zu muessen gibt es den Befehl \emph{graphicspath}. Ein Aufruf koennte folgendermassen aussehen: 
 \begin{itemize}
 	\item \verb|\graphicspath{{Bilder/}{foo/}}|: Es koennen so auch mehrere Pfade in einem Aufruf angegeben werden. 
 \end{itemize}
+Um ein Bild zu skalieren reicht folgender Aufruf, hierbei wird die relative Skalierung der Achsen nicht veraendert. 
+\begin{itemize}
+	\item \verb|includegraphics[width=<optionaleFaktor>\linewidth]{<Pfad+Titel>}|
+\end{itemize}
+Um die Standard-Formatierungsregeln Latex nutzen zu koennen benutzt man eine dafuer vorgesehene Umgebung namens \emph{figure}. Diese Umgebung kann die Bilder an den Anfang/Ende einer Seite dynamisch anpassen. Folgende Zusaetze in Eckigen Klammern geben genauere Spezifikationen fuer die gewuenschte Einfuegeposition: 
+\begin{itemize}
+	\item \verb|\begin{figure}[t]|: Es wird (falls moeglich) am Anfang einer Seite eingefuegt.
+	\item \verb|\begin{figure}[b]|: Es wird (falls moeglich) am Ende einer Seite eingefuegt.
+	\item \verb|\begin{figure}[h]|: Es wird (falls moeglich) an gegebner Stelle einer Seite eingefuegt.
+	\item falls Latex-Richtilinien dem widersprechen ist es mit dem Zusatz \emph{!} moeglich dies trotzdem zu 		veranlassen.
+\end{itemize}
+Bilder koennen mit captions versehen werden. Hierzu wird der Befehl \emph{caption} benoetigt.Zum Zentrieren nimmt man den Befehl center.
 
-\subsection{Sonstiges}
+Abbildungsverzechnisse koennen mit dem Befehl \verb|\listoffigures| angelegt werden. 
+
+\subsection{Referenzierung}
+Eine Refenz kann dynamisch sog. \emph{label} refernzieren. Es kann z.B. innerhalb einer figure-Umgebung ein Label mit dem Befehl lable{<Name>} gesetzt werden. In einem anderen Teil des Dokuments kann dann per \verb|\ref{<name>}| darauf referenziert werden. Konvention bei der Benennung: Immer einen Praefix mit der Abkuerzung der Umgebung mit anschliessendem Doppelpunkt voranschreiben. Ein Name fuer ein Bild koennte beispielsweise folgendermassen aussehen: \verb|label{fig:smiley}|
+
+Es koennen z.B. auch Ueberschriften referenziert werden. Dazu einfach ein Label unterhalb der Ueberschrift deklarieren \verb|label{sec:ueberschrift}|. 
+
+Per \verb|\pageref{fig:smiley}| kann z.B. auch eine Seitenangabe eines Labels erzeugt werden und in den Fliesstext eingebunden werden. 
+
+
+\section{Quellcode}
+\begin{itemize}
+	\item Verwendung des Packages \emph{listings}
+	\item Neue Umgebung mit \verb|\begin{lstlisting}[<optinaleStyleParameter>]| aufrufen
+\end{itemize}
+Moeglich eigenen Style fuer Quellcode anzulegen. Folgendes Bsp. aus dem Video:
+\begin{verbatim}
+\definecolor{DarkPurple}{rgb}{0.4,0.1,0.4}
+\definecolor{DarkCyan}{rgb}{0.0,0.5,0.4}
+\definecolor{LightLime}{rgb}{0.3,0.5,0.4}
+\definecolor{Blue}{0.0,0.0,1.0}
+
+\usepackage{beramono} %schoene Schriftart
+
+\lstdefinestyle{CodeStyling} {
+language=Java, %mit mehreren Sprachen moeglich, ermoeglicht Syntaxhighlighting
+columns=flexible,
+numbers=left,
+frame=single,
+frameround=tttt,
+showstringspaces=false,
+basicstyle=\footnotesize\ttfamily,
+keywordstyle=\bfseries\color{DarkPurple},
+commentstyle=\itshape\color{lightLime},
+stringstyle=\color{Blue}
+}
+\end{verbatim}
+
+
+
+
+\section{Sonstiges}
 \begin{itemize}[leftmargin=*]
   \item Prozentzeichen zum Auskommentieren 
+  \item Mit der Taste \emph{f1} laesst sich das Dokument im Programm \emph{Texmaker} schnell kompilieren.
 \end{itemize}
 
-\subsection{Beispielhafter Fliesstext}
+\section{Beispielhafter Fliesstext}
 asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf asdf asd fas das dfasd fasd fasd fsad fasd fas dfasd asdf 
 
 
+\clearpage
+\appendix
+\pagenumbering{roman}
+\thispagestyle{plain}
+\section{Im Anhang Eins}
 
 \end{document}
