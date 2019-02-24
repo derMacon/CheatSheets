@@ -7,3 +7,4 @@
 - [GDB (Ansi C Debugger)](https://github.com/derMacon/CheatSheets/blob/master/GDB_DebuggerGuide.md)
 - [Subversion (VCS)](https://github.com/derMacon/CheatSheets/blob/master/SvnCommands.md)
 - [Latex](https://github.com/derMacon/CheatSheets/blob/master/latexGuide/latexGuide.pdf)
+- [Git](https://github.com/derMacon/CheatSheets/blob/master/GitCommands.md)
