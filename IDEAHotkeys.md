@@ -24,3 +24,4 @@ Strg + i | implement interface
 Click on Proj. | Start typing in the project window and quickly find class
 Strg + Shift + u | select text block
 Strg + o | Override base class method
+Strg + Shift + Enter | Auto complete if statement
