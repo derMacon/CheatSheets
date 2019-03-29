@@ -27,3 +27,4 @@ Command | Explanation
 `Strg + o` | Override base class method
 `Strg + Shift + Enter` | Auto complete if statement
 `Strg + f6` | Change signature
+`Strg + c [with nothing selected]` | copies the current line
