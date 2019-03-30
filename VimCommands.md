@@ -11,6 +11,8 @@ Ctrl + e | Move Screen down one line
 Ctrl + b | Move Screen up one page
 Shift + G | Move to bottom of the page
 g + g | Move to beginning of the file
+`+` | Move to first non whitespace character
+`-` | Move to first non whitespace character of previous line
 
 ### Delete
 Commands | Explanation
