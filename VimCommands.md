@@ -13,10 +13,14 @@ Shift + G | Move to bottom of the page
 g + g | Move to beginning of the file
 `+` | Move to first non whitespace character
 `-` | Move to first non whitespace character of previous line
+two apostrophes | Move back to last position of the cursor
+`A` | Move to eol and switch into insert mode
 
 ### Delete
 Commands | Explanation
 ---------| ----------
+`d` | delete selection 
+`D` | delete till eol
 `dG` | delete all lines
 `dd` | delete current line
 
@@ -31,6 +35,8 @@ Commands | Explanation
 `dd` | cut current line 
 `p` | paste after cursor
 `P` | paste before cursor
+`ciw`| copy and delete current word
+`diw` | delete current word
 
 ### Save
 Command | Explanation
@@ -51,3 +57,4 @@ In terminal type `vim .vimrc` | safe settings for all instances
 :set tabstop=<num> | set tabstop size to <num> chars
 
 For Markdown syntax: [sourceforge.net](https://sourceforge.net/p/tabulator/wiki/markdown_syntax/#md_ex_tables)
+
