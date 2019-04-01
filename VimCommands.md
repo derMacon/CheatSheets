@@ -15,6 +15,13 @@ g + g | Move to beginning of the file
 `-` | Move to first non whitespace character of previous line
 two apostrophes | Move back to last position of the cursor
 `A` | Move to eol and switch into insert mode
+`{` | Previous paragraph
+`}` | next paragraph
+Backspace | move one character to the back
+Space | move on character to the front
+`a` | positions the corsor behind the char it was hovering over in normal mode
+`[m` | go to function head of the current function
+`]m` | go to function head of the next function
 
 ### Delete
 Commands | Explanation
@@ -23,6 +30,7 @@ Commands | Explanation
 `D` | delete till eol
 `dG` | delete all lines
 `dd` | delete current line
+`x` | delete next character
 
 ### Copy / Paste
 Commands | Explanation
