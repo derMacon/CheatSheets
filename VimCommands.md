@@ -46,6 +46,13 @@ Commands | Explanation
 `ciw`| copy and delete current word
 `diw` | delete current word
 
+### Edit
+Commands | Explanation
+---------| ----------
+`o` | open new line below cursor
+`O` | open new line above cursor
+
+
 ### Save
 Command | Explanation
 -------- | -------
