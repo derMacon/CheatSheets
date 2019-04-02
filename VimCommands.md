@@ -9,7 +9,8 @@ z + b | Move current line to the bottom of the screen
 Ctrl + y | Move Screen up one line 
 Ctrl + e | Move Screen down one line 
 Ctrl + b | Move Screen up one page
-Shift + G | Move to bottom of the page
+`G` | Move to bottom of the page
+`[lineNum] + G` | goto line  
 g + g | Move to beginning of the file
 `+` | Move to first non whitespace character
 `-` | Move to first non whitespace character of previous line
@@ -51,7 +52,8 @@ Commands | Explanation
 ---------| ----------
 `o` | open new line below cursor
 `O` | open new line above cursor
-
+`%s/[patternToReplace]/[strToReplaceWith] | Search and replace whole doc
+`[upperLineNum],[lowerLineNum]s/[patternToReplace]/[strToReplaceWith] | Search and replace portion of doc
 
 ### Save
 Command | Explanation

@@ -28,3 +28,5 @@ Command | Explanation
 `Strg + Shift + Enter` | Auto complete if statement
 `Strg + f6` | Change signature
 `Strg + c [with nothing selected]` | copies the current line
+`String + f8` | Set / delete breakpoint 
+
