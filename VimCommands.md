@@ -46,6 +46,8 @@ Commands | Explanation
 `P` | paste before cursor
 `ciw`| copy and delete current word
 `diw` | delete current word
+`"*y` | copy to global clipboard
+`"*p` | paste from global clipboard
 
 ### Edit
 Commands | Explanation
