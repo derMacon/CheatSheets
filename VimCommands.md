@@ -48,6 +48,7 @@ Commands | Explanation
 `diw` | delete current word
 `"*y` | copy to global clipboard
 `"*p` | paste from global clipboard
+`V` | Select the current line
 
 ### Edit
 Commands | Explanation
