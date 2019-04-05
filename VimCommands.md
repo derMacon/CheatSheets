@@ -24,6 +24,13 @@ Space | move on character to the front
 `[m` | go to function head of the current function
 `]m` | go to function head of the next function
 
+### Search
+`/` + word to serach for | finds the next word
+`n` | Iterates to the next occurence
+`N` | Iterates to the previous occurence
+`ggn` | jump to the first match
+`GN` | Jump to the last match
+
 ### Delete
 Commands | Explanation
 ---------| ----------
