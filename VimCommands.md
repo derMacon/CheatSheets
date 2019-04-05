@@ -23,6 +23,8 @@ Space | move on character to the front
 `a` | positions the corsor behind the char it was hovering over in normal mode
 `[m` | go to function head of the current function
 `]m` | go to function head of the next function
+`ctrl` + `o` | go back in jump list
+`ctrl` + `l` | go forward in jump list
 
 ### Search
 `/` + word to serach for | finds the next word
@@ -64,6 +66,7 @@ Commands | Explanation
 `O` | open new line above cursor
 `%s/[patternToReplace]/[strToReplaceWith] | Search and replace whole doc
 `[upperLineNum],[lowerLineNum]s/[patternToReplace]/[strToReplaceWith] | Search and replace portion of doc
+`"_d` | delete something without copying
 
 ### Save
 Command | Explanation
