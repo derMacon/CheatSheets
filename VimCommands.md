@@ -25,13 +25,16 @@ Space | move on character to the front
 `]m` | go to function head of the next function
 `ctrl` + `o` | go back in jump list
 `ctrl` + `l` | go forward in jump list
+`%` | finds the closing brackets for a given paranthesis
+`*` | find next occurence of the word under the cursor
+`#` | find the previous occurence of the word under the cursor
 
 ### Search
 `/` + word to serach for | finds the next word
 `n` | Iterates to the next occurence
 `N` | Iterates to the previous occurence
 `ggn` | jump to the first match
-`GN` | Jump to the last match
+`GN` | Jump to the last match 
 
 ### Delete
 Commands | Explanation
@@ -40,7 +43,7 @@ Commands | Explanation
 `D` | delete till eol
 `dG` | delete all lines
 `dd` | delete current line
-`x` | delete next character
+`x` | delete the character
 
 ### Copy / Paste
 Commands | Explanation
@@ -67,6 +70,11 @@ Commands | Explanation
 `%s/[patternToReplace]/[strToReplaceWith] | Search and replace whole doc
 `[upperLineNum],[lowerLineNum]s/[patternToReplace]/[strToReplaceWith] | Search and replace portion of doc
 `"_d` | delete something without copying
+`[num]i[word][esc] | inserts the word num times
+`r` | replace character under cursor without switching to insert mode
+`.` | Repeat last operation
+`u` | undo
+`ctrl` + `r` | redo
 
 ### Save
 Command | Explanation
