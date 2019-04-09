@@ -34,3 +34,8 @@ Command | Explanation
 `git tag -a v.[versionNum] -m "[release messgae]"` | Created a new tag with a given release message
 `git push origin` | push created tag to origin remote
 
+### Remove staged dir / file
+Command | Explanation
+--------| ---------
+git rm -r --cached [directoryName] | Remove directory from remote repo
+
