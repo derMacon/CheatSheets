@@ -1,18 +1,18 @@
-# Essentials
+### Essentials
 Command | Explanation
 --------| ---------
 `clean -f -d` | delete all untracked files / local changes
 `for /d %i in (*.*) do cd %i & git pull & cd..` | pull all repos in subdirectories
 `reflog` | see commits with its messages
 
-# Branching
+### Branching
 Command | Explanation
 --------| ---------
 `git pull` -> `git checkout -b [newBranchName]` -> `git push origin [newBranchName]` | Generates a new Branch and pushes it to the upstream
 `git branch -d [branchName]` | delete specific branch
 `git pull origin master` -> `git checkout master` -> `git merge [newBranch]` | Merges the feature branch into the master branch
 
-# Merging 
+### Merging 
 Command | Explanation
 --------| ---------
 `git merge --abort` | leave merging mode (in case of merge conflict)
@@ -25,7 +25,7 @@ Command | Explanation
 `git reset --hard <commit>` | revert back to specific commit 
 `git push --force` | reset the remote to the old commit 
 
-# overwrite master with contents of seotweaks branch (seotweaks > master)
+### overwrite master with contents of seotweaks branch (seotweaks > master)
 Command | Explanation
 --------| ---------
 git checkout seotweaks    | source name
