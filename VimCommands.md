@@ -28,6 +28,10 @@ Space | move on character to the front
 `%` | finds the closing brackets for a given paranthesis
 `*` | find next occurence of the word under the cursor
 `#` | find the previous occurence of the word under the cursor
+`f` + `[letter]` | moves to the next occurence of the specified letter
+`F + `[letter]` | moves to the previous occurence of the specified letter
+`;` | to iterate the findings
+`,` | reverse iteration of the findings
 
 ### Search
 `/` + word to serach for | finds the next word
