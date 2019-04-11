@@ -12,6 +12,12 @@ Command | Explanation
 `git branch -d [branchName]` | delete specific branch
 `git pull origin master` -> `git checkout master` -> `git merge [newBranch]` | Merges the feature branch into the master branch
 
+# Merging 
+Command | Explanation
+--------| ---------
+`git merge --abort` | leave merging mode (in case of merge conflict)
+`git merge --strategy-option [ours / theirs]` | resolve conflict by taking ours / theirs
+
 ### Reset
 Command | Explanation
 --------| ---------
@@ -22,10 +28,10 @@ Command | Explanation
 # overwrite master with contents of seotweaks branch (seotweaks > master)
 Command | Explanation
 --------| ---------
-git checkout seotweaks    # source name
-git merge -s ours master  # target name
-git checkout master       # target name
-git merge seotweaks       # source name
+git checkout seotweaks    | source name
+git merge -s ours master  | target name
+git checkout master       | target name
+git merge seotweaks       | source name
 
 ### Tagging release
 Command | Explanation

@@ -75,6 +75,7 @@ Commands | Explanation
 `.` | Repeat last operation
 `u` | undo
 `ctrl` + `r` | redo
+`ctrl` + `v` | enter blockwise visual mode -> select and edit on multiple lines
 
 ### Save
 Command | Explanation
