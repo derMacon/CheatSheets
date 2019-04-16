@@ -24,6 +24,7 @@ Command | Explanation
 `git reflog` | see log hash num
 `git reset --hard <commit>` | revert back to specific commit 
 `git push --force` | reset the remote to the old commit 
+`git reset --hard origin/[branchName]` | discard local commit / checkout remote
 
 ### overwrite master with contents of seotweaks branch (seotweaks > master)
 Command | Explanation
