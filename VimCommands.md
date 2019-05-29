@@ -9,7 +9,10 @@ z + b | Move current line to the bottom of the screen
 Ctrl + y | Move Screen up one line 
 Ctrl + e | Move Screen down one line 
 Ctrl + b | Move Screen up one page
-`G` | Move to bottom of the page
+`H` | move cursor to top of the page
+`M` | move cursor to middle of the page
+`L` | move cursor to the low end of the page
+`G` | Move to bottom of the document
 `[lineNum] + G` | goto line  
 g + g | Move to beginning of the file
 `+` | Move to first non whitespace character
@@ -81,6 +84,7 @@ Commands | Explanation
 `ctrl` + `r` | redo
 `ctrl` + `v` | enter blockwise visual mode -> select and edit on multiple lines
 `ft` | in combination with delete or select it will go to the char before the specified char
+`ci)` | delete everything in between the current brackets and go into insert mode
 
 ### Save
 Command | Explanation
