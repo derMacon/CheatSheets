@@ -80,6 +80,7 @@ Commands | Explanation
 `u` | undo
 `ctrl` + `r` | redo
 `ctrl` + `v` | enter blockwise visual mode -> select and edit on multiple lines
+`ft` | in combination with delete or select it will go to the char before the specified char
 
 ### Save
 Command | Explanation
