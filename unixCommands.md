@@ -7,6 +7,7 @@ mkdir <foldername> | Create directory
 vim <filename> | Create file and open in Vim
 rm -rf <foldername> | Remove specified folder with all its files
 cp -a /path/from /path/to | Copy entire folder with all its files
+`tar -xvzf /path/to/source.tgz -C /path/where/to/` | extract tar from tgz
 
 
 For Markdown syntax: [sourceforge.net](https://sourceforge.net/p/tabulator/wiki/markdown_syntax/#md_ex_tables)
