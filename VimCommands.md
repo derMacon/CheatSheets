@@ -36,6 +36,11 @@ Space | move on character to the front
 `;` | to iterate the findings
 `,` | reverse iteration of the findings
 
+### Register
+`m[anyLetter_lowercase]` | saves a local bookmark position
+`m[anyLetter_upcase]` | saves a global bookmark position (available in other docs)
+```[registerLetter]` | sets cursor to bookmark
+
 ### Search
 `/` + word to serach for | finds the next word
 `n` | Iterates to the next occurence
