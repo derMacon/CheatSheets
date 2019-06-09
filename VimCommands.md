@@ -100,6 +100,16 @@ u | undo changes
 Ctrl + r | redo undone changes
 : + q + ! | quit without saving
 
+### Tabs
+`tabe <filename>` | open a file as a new tab
+`ctrl + z` | buffern vim session and open terminal
+`fg` | return to vim session after buffering (see last line)
+`gt` or `gT` | switch between tabs
+`:mksession <filepath>` | create a session with the specified name and path
+`:source <filepath>` | load vim session from the specified path
+`$ vim -S <filepath>` | load a vim session from the terminal
+`:close` | close current tab
+
 ### Settings
 Command | Explanation
 -------- | -------
