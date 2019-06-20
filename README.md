@@ -9,3 +9,4 @@
 - [Latex](https://github.com/derMacon/CheatSheets/blob/master/latexGuide/latexGuide.pdf)
 - [Git](https://github.com/derMacon/CheatSheets/blob/master/GitCommands.md)
 - [JavaFX - Main](https://github.com/derMacon/CheatSheets/blob/master/JavaFXFramework_Main.java)
+- [Regex - Cheat sheet](./regex/regex_cheatsheet.pdf)
