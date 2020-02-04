@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[most]{tcolorbox}
+\usepackage[paperheight=10.75in,paperwidth=7.25in,margin=1in,heightrounded]{geometry}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage[space]{grffile}
+\usepackage[utf8]{inputenc}
+\usepackage[export]{adjustbox}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\rightmark}
+\chead{\thepart}
+\lhead{\nouppercase{\leftmark}}
+\cfoot{\thepage}
+\graphicspath{{"/home/silasUser/.local/share/Anki2/User 1/collection.media/"}}
+
+\title{Betriebssysteme}
+\author{Silas Hoffmann, inf103088}
+\date{\today}
+
+
+
+\begin{document}
+\maketitle
+\vspace{0.5cm}
+\tableofcontents
+\clearpage
+
+%*********************
+\Needspace{20\baselineskip}
+\section{First Section}
+\Needspace{20\baselineskip}
+\subsection{First Subsection}
+%---------------------
+\blindtext
+
+\end{document}
